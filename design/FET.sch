@@ -1,0 +1,633 @@
+EESchema Schematic File Version 4
+LIBS:SSL_BLDC-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L conn:CONN_01X01 P?
+U 1 1 5BBCAF3F
+P 6625 3000
+F 0 "P?" H 6703 3041 50  0000 L CNN
+F 1 "U" H 6703 2950 50  0000 L CNN
+F 2 "MineFootprints:Power_line" H 6625 3000 60  0001 C CNN
+F 3 "" H 6625 3000 60  0000 C CNN
+	1    6625 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 1975 6425 2375
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF47
+P 7225 3350
+F 0 "TP?" H 7378 3452 50  0000 L CNN
+F 1 "V_GLC" H 7225 3300 50  0000 L CNN
+F 2 "Connect:PINTST" H 7425 3350 50  0001 C CNN
+F 3 "~" H 7425 3350 50  0001 C CNN
+	1    7225 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF4E
+P 7175 2700
+F 0 "TP?" H 7328 2802 50  0000 L CNN
+F 1 "V_GHC" H 7175 2650 50  0000 L CNN
+F 2 "Connect:PINTST" H 7375 2700 50  0001 C CNN
+F 3 "~" H 7375 2700 50  0001 C CNN
+	1    7175 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF55
+P 5825 3350
+F 0 "TP?" H 5978 3452 50  0000 L CNN
+F 1 "V_GLB" H 5825 3300 50  0000 L CNN
+F 2 "Connect:PINTST" H 6025 3350 50  0001 C CNN
+F 3 "~" H 6025 3350 50  0001 C CNN
+	1    5825 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF5C
+P 5775 2700
+F 0 "TP?" H 5928 2802 50  0000 L CNN
+F 1 "V_GHB" H 5775 2650 50  0000 L CNN
+F 2 "Connect:PINTST" H 5975 2700 50  0001 C CNN
+F 3 "~" H 5975 2700 50  0001 C CNN
+	1    5775 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF63
+P 4425 3350
+F 0 "TP?" H 4578 3452 50  0000 L CNN
+F 1 "V_GLA" H 4425 3300 50  0000 L CNN
+F 2 "Connect:PINTST" H 4625 3350 50  0001 C CNN
+F 3 "~" H 4625 3350 50  0001 C CNN
+	1    4425 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5BBCAF6A
+P 4375 2700
+F 0 "TP?" H 4528 2802 50  0000 L CNN
+F 1 "V_GHA" H 4375 2650 50  0000 L CNN
+F 2 "Connect:PINTST" H 4575 2700 50  0001 C CNN
+F 3 "~" H 4575 2700 50  0001 C CNN
+	1    4375 2700
+	1    0    0    -1  
+$EndComp
+Text Label 6425 2375 2    60   ~ 0
+VDRAIN
+$Comp
+L Device:C_Small C?
+U 1 1 5BBCAF72
+P 5475 3950
+F 0 "C?" H 5525 4025 50  0000 C CNN
+F 1 "1nF" H 5350 3950 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5475 3950 50  0001 C CNN
+F 3 "~" H 5475 3950 50  0001 C CNN
+	1    5475 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 3750 7825 3750
+Connection ~ 7525 3750
+Wire Wire Line
+	7525 3650 7525 3750
+Wire Wire Line
+	7525 3450 7525 3350
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAF7D
+P 7525 3550
+F 0 "R?" H 7584 3596 50  0000 L CNN
+F 1 "470k" H 7584 3505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7525 3550 50  0001 C CNN
+F 3 "" H 7525 3550 50  0000 C CNN
+	1    7525 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 3000 7825 3000
+Wire Wire Line
+	7525 2950 7525 3000
+Wire Wire Line
+	7525 2700 7525 2750
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAF87
+P 7525 2850
+F 0 "R?" H 7584 2896 50  0000 L CNN
+F 1 "470k" H 7584 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7525 2850 50  0001 C CNN
+F 3 "" H 7525 2850 50  0000 C CNN
+	1    7525 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6125 3750
+Wire Wire Line
+	6125 3650 6125 3750
+Wire Wire Line
+	6125 3450 6125 3350
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAF91
+P 6125 3550
+F 0 "R?" H 6184 3596 50  0000 L CNN
+F 1 "470k" H 6184 3505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6125 3550 50  0001 C CNN
+F 3 "" H 6125 3550 50  0000 C CNN
+	1    6125 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3000 6425 3000
+Wire Wire Line
+	6125 2950 6125 3000
+Wire Wire Line
+	6125 2750 6125 2700
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAF9B
+P 6125 2850
+F 0 "R?" H 6184 2896 50  0000 L CNN
+F 1 "470k" H 6184 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6125 2850 50  0001 C CNN
+F 3 "" H 6125 2850 50  0000 C CNN
+	1    6125 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 3650 4725 3750
+Wire Wire Line
+	4725 3350 4725 3450
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAFA4
+P 4725 3550
+F 0 "R?" H 4784 3596 50  0000 L CNN
+F 1 "470k" H 4784 3505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4725 3550 50  0001 C CNN
+F 3 "" H 4725 3550 50  0000 C CNN
+	1    4725 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 3000 5025 3000
+Wire Wire Line
+	4725 2950 4725 3000
+Wire Wire Line
+	4725 2700 4725 2750
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BBCAFAE
+P 4725 2850
+F 0 "R?" H 4784 2896 50  0000 L CNN
+F 1 "470k" H 4784 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4725 2850 50  0001 C CNN
+F 3 "" H 4725 2850 50  0000 C CNN
+	1    4725 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X01 P?
+U 1 1 5BBCAFB5
+P 8025 3000
+F 0 "P?" H 8103 3041 50  0000 L CNN
+F 1 "W" H 8103 2950 50  0000 L CNN
+F 2 "MineFootprints:Power_line" H 8025 3000 60  0001 C CNN
+F 3 "" H 8025 3000 60  0000 C CNN
+	1    8025 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X01 P?
+U 1 1 5BBCAFBC
+P 5225 3000
+F 0 "P?" H 5303 3041 50  0000 L CNN
+F 1 "U" H 5303 2950 50  0000 L CNN
+F 2 "MineFootprints:Power_line" H 5225 3000 60  0001 C CNN
+F 3 "" H 5225 3000 60  0000 C CNN
+	1    5225 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4150 6425 4150
+Wire Wire Line
+	6400 3900 6400 4150
+Wire Wire Line
+	6275 3900 6400 3900
+Wire Wire Line
+	6275 3850 6275 3900
+Wire Wire Line
+	6425 3950 6425 3750
+Wire Wire Line
+	6275 3950 6425 3950
+Wire Wire Line
+	6275 4050 6275 3950
+$Comp
+L Device:R_Shunt R?
+U 1 1 5BBCAFCA
+P 6425 3950
+F 0 "R?" H 6338 3904 50  0000 R CNN
+F 1 "R_Shunt/0.001" H 6338 3995 50  0000 R CNN
+F 2 "crf1:WSLP2726" V 6355 3950 50  0001 C CNN
+F 3 "~" H 6425 3950 50  0001 C CNN
+	1    6425 3950
+	-1   0    0    1   
+$EndComp
+Text Label 7350 3000 2    60   ~ 0
+phase_C
+Text Label 5950 3000 2    60   ~ 0
+phase_B
+Text Label 4550 3000 2    60   ~ 0
+phase_A
+Wire Wire Line
+	7825 3550 7825 3750
+Wire Wire Line
+	6425 3550 6425 3750
+Wire Wire Line
+	5025 3550 5025 3750
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCAFD7
+P 4925 2700
+F 0 "Q?" H 5075 2900 50  0000 L CNN
+F 1 "EKI04047" H 4600 2900 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 5125 2800 50  0001 C CNN
+F 3 "~" H 4925 2700 50  0001 C CNN
+	1    4925 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCAFDE
+P 5625 4050
+F 0 "R?" V 5550 4050 50  0000 C CNN
+F 1 "1k" V 5625 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5555 4050 50  0001 C CNN
+F 3 "~" H 5625 4050 50  0001 C CNN
+	1    5625 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCAFE5
+P 5625 3850
+F 0 "R?" V 5550 3850 50  0000 C CNN
+F 1 "1k" V 5625 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5555 3850 50  0001 C CNN
+F 3 "~" H 5625 3850 50  0001 C CNN
+	1    5625 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCAFEC
+P 7075 3350
+F 0 "R?" V 7000 3350 50  0000 C CNN
+F 1 "10" V 7075 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7005 3350 50  0001 C CNN
+F 3 "~" H 7075 3350 50  0001 C CNN
+	1    7075 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCAFF3
+P 7025 2700
+F 0 "R?" V 6950 2700 50  0000 C CNN
+F 1 "10" V 7025 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6955 2700 50  0001 C CNN
+F 3 "~" H 7025 2700 50  0001 C CNN
+	1    7025 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCAFFA
+P 5625 2700
+F 0 "R?" V 5550 2700 50  0000 C CNN
+F 1 "10" V 5625 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5555 2700 50  0001 C CNN
+F 3 "~" H 5625 2700 50  0001 C CNN
+	1    5625 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCB001
+P 5675 3350
+F 0 "R?" V 5600 3350 50  0000 C CNN
+F 1 "10" V 5675 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5605 3350 50  0001 C CNN
+F 3 "~" H 5675 3350 50  0001 C CNN
+	1    5675 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCB008
+P 4275 3350
+F 0 "R?" V 4200 3350 50  0000 C CNN
+F 1 "10" V 4275 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4205 3350 50  0001 C CNN
+F 3 "~" H 4275 3350 50  0001 C CNN
+	1    4275 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBCB00F
+P 4225 2700
+F 0 "R?" V 4150 2700 50  0000 C CNN
+F 1 "10" V 4225 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4155 2700 50  0001 C CNN
+F 3 "~" H 4225 2700 50  0001 C CNN
+	1    4225 2700
+	0    1    1    0   
+$EndComp
+Connection ~ 6425 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5BBCB017
+P 6425 4150
+AR Path="/5BBCB017" Ref="#PWR?"  Part="1" 
+AR Path="/5BBCA114/5BBCB017" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6425 3900 50  0001 C CNN
+F 1 "GND" H 6425 4000 50  0000 C CNN
+F 2 "" H 6425 4150 50  0001 C CNN
+F 3 "" H 6425 4150 50  0001 C CNN
+	1    6425 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCB01D
+P 7725 3350
+F 0 "Q?" H 7931 3396 50  0000 L CNN
+F 1 "EKI04047" H 7931 3305 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 7925 3450 50  0001 C CNN
+F 3 "~" H 7725 3350 50  0001 C CNN
+	1    7725 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCB024
+P 7725 2700
+F 0 "Q?" H 7931 2746 50  0000 L CNN
+F 1 "EKI04047" H 7931 2655 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 7925 2800 50  0001 C CNN
+F 3 "~" H 7725 2700 50  0001 C CNN
+	1    7725 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCB02B
+P 6325 3350
+F 0 "Q?" H 6531 3396 50  0000 L CNN
+F 1 "EKI04047" H 6531 3305 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 6525 3450 50  0001 C CNN
+F 3 "~" H 6325 3350 50  0001 C CNN
+	1    6325 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCB032
+P 6325 2700
+F 0 "Q?" H 6531 2746 50  0000 L CNN
+F 1 "EKI04047" H 6531 2655 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 6525 2800 50  0001 C CNN
+F 3 "~" H 6325 2700 50  0001 C CNN
+	1    6325 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5BBCB039
+P 4925 3350
+F 0 "Q?" H 5131 3396 50  0000 L CNN
+F 1 "EKI04047" H 5131 3305 50  0000 L CNN
+F 2 "MineFootprints:TO-220_Neutral123_Vertical_LargePads" H 5125 3450 50  0001 C CNN
+F 3 "~" H 4925 3350 50  0001 C CNN
+	1    4925 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7525 3350
+Connection ~ 7225 3350
+Wire Wire Line
+	7225 3350 7525 3350
+Connection ~ 7525 2700
+Connection ~ 7175 2700
+Wire Wire Line
+	7175 2700 7525 2700
+Connection ~ 6125 3350
+Connection ~ 5825 3350
+Wire Wire Line
+	5825 3350 6125 3350
+Connection ~ 6125 2700
+Connection ~ 5775 2700
+Wire Wire Line
+	5775 2700 6125 2700
+Connection ~ 4725 3350
+Connection ~ 4425 3350
+Wire Wire Line
+	4425 3350 4725 3350
+Connection ~ 4725 2700
+Connection ~ 4375 2700
+Wire Wire Line
+	4375 2700 4725 2700
+Wire Wire Line
+	7825 3000 7825 3150
+Wire Wire Line
+	6425 3000 6425 3150
+Wire Wire Line
+	5025 3000 5025 3150
+Wire Wire Line
+	4725 3750 5025 3750
+Wire Wire Line
+	5025 3750 6125 3750
+Connection ~ 5025 3750
+Text Label 4650 3750 2    60   ~ 0
+LSS
+Connection ~ 5475 4050
+Wire Wire Line
+	4650 4050 5475 4050
+Connection ~ 5475 3850
+Wire Wire Line
+	4650 3850 5475 3850
+Connection ~ 6275 3850
+Wire Wire Line
+	6275 3850 5775 3850
+Connection ~ 6275 4050
+Wire Wire Line
+	5775 4050 6275 4050
+Text Label 4650 4050 2    60   ~ 0
+CSP
+Text Label 4650 3850 2    60   ~ 0
+CSN
+Wire Wire Line
+	5025 2375 6425 2375
+Wire Wire Line
+	6425 2375 7825 2375
+Connection ~ 6425 2375
+Wire Wire Line
+	5025 2375 5025 2500
+Wire Wire Line
+	7825 2375 7825 2500
+Wire Wire Line
+	6425 2500 6425 2375
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BBCB069
+P 6425 1975
+AR Path="/5BBCB069" Ref="#PWR?"  Part="1" 
+AR Path="/5BBCA114/5BBCB069" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6425 1825 50  0001 C CNN
+F 1 "+BATT" H 6275 2025 50  0000 C CNN
+F 2 "" H 6425 1975 50  0001 C CNN
+F 3 "" H 6425 1975 50  0001 C CNN
+	1    6425 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3750 6425 3750
+Wire Wire Line
+	6425 3750 7525 3750
+Connection ~ 6425 3750
+Connection ~ 4725 3750
+Wire Wire Line
+	4650 3750 4725 3750
+Wire Wire Line
+	6700 3350 6925 3350
+Text Label 6700 3350 0    60   ~ 0
+GLC
+Text Label 6700 2700 0    60   ~ 0
+GHC
+Wire Wire Line
+	6875 2700 6700 2700
+Connection ~ 7825 3000
+Wire Wire Line
+	7825 2900 7825 3000
+Connection ~ 7525 3000
+Wire Wire Line
+	7350 3000 7525 3000
+Wire Wire Line
+	5300 3350 5525 3350
+Text Label 5300 3350 0    60   ~ 0
+GLB
+Text Label 5300 2700 0    60   ~ 0
+GHB
+Wire Wire Line
+	5475 2700 5300 2700
+Connection ~ 6425 3000
+Wire Wire Line
+	6425 2900 6425 3000
+Connection ~ 6125 3000
+Wire Wire Line
+	5950 3000 6125 3000
+Wire Wire Line
+	3900 3350 4125 3350
+Text Label 3900 3350 0    60   ~ 0
+GLA
+Text Label 3900 2700 0    60   ~ 0
+GHA
+Wire Wire Line
+	4075 2700 3900 2700
+Connection ~ 5025 3000
+Wire Wire Line
+	5025 2900 5025 3000
+Connection ~ 4725 3000
+Wire Wire Line
+	4550 3000 4725 3000
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BBCC441
+P 9100 2725
+AR Path="/5BBCC441" Ref="#PWR?"  Part="1" 
+AR Path="/5BBCA114/5BBCC441" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 2575 50  0001 C CNN
+F 1 "+BATT" H 8950 2775 50  0000 C CNN
+F 2 "" H 9100 2725 50  0001 C CNN
+F 3 "" H 9100 2725 50  0001 C CNN
+	1    9100 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BBCC56C
+P 8825 3125
+F 0 "C?" H 8940 3171 50  0000 L CNN
+F 1 "C" H 8940 3080 50  0000 L CNN
+F 2 "" H 8863 2975 50  0001 C CNN
+F 3 "~" H 8825 3125 50  0001 C CNN
+	1    8825 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BBCC5EA
+P 9350 3125
+F 0 "C?" H 9465 3171 50  0000 L CNN
+F 1 "C" H 9465 3080 50  0000 L CNN
+F 2 "" H 9388 2975 50  0001 C CNN
+F 3 "~" H 9350 3125 50  0001 C CNN
+	1    9350 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 2975 8825 2900
+Wire Wire Line
+	8825 2900 9100 2900
+Wire Wire Line
+	9350 2900 9350 2975
+Connection ~ 9100 2900
+Wire Wire Line
+	9100 2900 9350 2900
+Wire Wire Line
+	8825 3275 8825 3350
+Wire Wire Line
+	8825 3350 9100 3350
+Wire Wire Line
+	9350 3350 9350 3275
+$Comp
+L power:GND #PWR?
+U 1 1 5BBD0635
+P 9100 3525
+AR Path="/5BBD0635" Ref="#PWR?"  Part="1" 
+AR Path="/5BBCA114/5BBD0635" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 3275 50  0001 C CNN
+F 1 "GND" H 9100 3375 50  0000 C CNN
+F 2 "" H 9100 3525 50  0001 C CNN
+F 3 "" H 9100 3525 50  0001 C CNN
+	1    9100 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3525 9100 3350
+Connection ~ 9100 3350
+Wire Wire Line
+	9100 3350 9350 3350
+Wire Wire Line
+	9100 2725 9100 2900
+$EndSCHEMATC

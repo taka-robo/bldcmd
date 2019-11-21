@@ -1,0 +1,627 @@
+EESchema Schematic File Version 4
+LIBS:SSL_BLDC-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 5150 3625 0    60   ~ 0
+PWM
+Text Label 5150 2825 0    60   ~ 0
+FF1
+Wire Wire Line
+	5150 2825 5425 2825
+Wire Wire Line
+	5150 2725 5425 2725
+Wire Wire Line
+	5150 3125 5425 3125
+Wire Wire Line
+	5150 3225 5425 3225
+Wire Wire Line
+	5150 3425 5425 3425
+Wire Wire Line
+	5150 4425 5425 4425
+Text Label 5150 2925 0    60   ~ 0
+TACHO
+Text Label 5150 3025 0    60   ~ 0
+BRAKE
+Wire Wire Line
+	5150 3325 5425 3325
+Wire Wire Line
+	5150 3625 5425 3625
+Text Label 5150 3125 0    60   ~ 0
+DIR
+Text Label 5150 3225 0    60   ~ 0
+H1
+Text Label 5150 3325 0    60   ~ 0
+H2
+Text Label 5150 3425 0    60   ~ 0
+H3
+Text Label 5150 3725 0    60   ~ 0
+MODE
+Wire Wire Line
+	6475 2525 6750 2525
+Wire Wire Line
+	5150 2425 5425 2425
+Text Label 6750 2525 2    60   ~ 0
+COAST
+Wire Wire Line
+	6475 2725 6750 2725
+Text Label 6750 2725 2    60   ~ 0
+DIRO
+Wire Wire Line
+	6475 2775 6750 2775
+Wire Wire Line
+	6475 2925 6475 2975
+Wire Wire Line
+	6475 2975 6750 2975
+Wire Wire Line
+	5150 4325 5425 4325
+Wire Wire Line
+	6475 3325 7300 3325
+Text Label 6750 3325 2    60   ~ 0
+LSS
+Wire Wire Line
+	6475 3525 6750 3525
+Wire Wire Line
+	6475 3625 6750 3625
+Text Label 6750 3525 2    60   ~ 0
+GLA
+Text Label 6750 3625 2    60   ~ 0
+GLB
+Text Label 6750 3725 2    60   ~ 0
+GLC
+Wire Wire Line
+	6475 3825 7025 3825
+Wire Wire Line
+	6475 3925 6750 3925
+Text Label 6750 3925 2    60   ~ 0
+GHA
+Wire Wire Line
+	6475 4025 7025 4025
+Wire Wire Line
+	6475 4225 6750 4225
+Text Label 6750 4225 2    60   ~ 0
+GHB
+Text Label 6750 4525 2    60   ~ 0
+GHC
+Wire Wire Line
+	6750 4525 6475 4525
+Wire Wire Line
+	6475 4125 7025 4125
+Wire Wire Line
+	6475 4325 7025 4325
+Wire Wire Line
+	6475 4425 7025 4425
+Wire Wire Line
+	6475 4625 7025 4625
+Text Label 6475 4025 0    60   ~ 0
+phase_A
+Text Label 6475 4325 0    60   ~ 0
+phase_B
+Text Label 6475 4625 0    60   ~ 0
+phase_C
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BBC3A1E
+P 5150 2225
+F 0 "#PWR?" H 5150 2075 50  0001 C CNN
+F 1 "+BATT" H 5150 2365 50  0000 C CNN
+F 2 "" H 5150 2225 50  0001 C CNN
+F 3 "" H 5150 2225 50  0001 C CNN
+	1    5150 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2225 3400 2325
+Text Label 5150 2625 0    60   ~ 0
+V5
+Wire Wire Line
+	3700 2925 3400 2925
+Wire Wire Line
+	4350 3825 4350 3700
+Wire Wire Line
+	4150 3700 4150 3825
+Connection ~ 4025 3925
+Wire Wire Line
+	4150 3825 4025 3825
+Wire Wire Line
+	4025 3825 4025 3925
+Wire Wire Line
+	6475 2625 7025 2625
+Wire Wire Line
+	6475 2825 6475 2775
+Wire Wire Line
+	6750 3725 6475 3725
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BBC3A30
+P 7025 2625
+F 0 "#PWR?" H 7025 2475 50  0001 C CNN
+F 1 "+BATT" H 6875 2675 50  0000 C CNN
+F 2 "" H 7025 2625 50  0001 C CNN
+F 3 "" H 7025 2625 50  0001 C CNN
+	1    7025 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BBC3A36
+P 7025 3125
+F 0 "#PWR?" H 7025 2875 50  0001 C CNN
+F 1 "GND" H 7025 2975 50  0000 C CNN
+F 2 "" H 7025 3125 50  0001 C CNN
+F 3 "" H 7025 3125 50  0001 C CNN
+	1    7025 3125
+	1    0    0    -1  
+$EndComp
+Text Label 5150 4425 0    60   ~ 0
+CSP
+Text Label 5150 4325 0    60   ~ 0
+CSN
+Text Label 5150 4125 0    60   ~ 0
+CSOUT
+Wire Wire Line
+	6475 3225 6750 3225
+Wire Wire Line
+	5150 4125 5425 4125
+Wire Wire Line
+	6475 3025 7025 3025
+Wire Wire Line
+	7025 3025 7025 3125
+Wire Wire Line
+	7025 3125 6975 3125
+Wire Wire Line
+	6475 3125 6775 3125
+Wire Wire Line
+	7300 3025 7300 3075
+Connection ~ 7025 3025
+Wire Wire Line
+	7300 3325 7300 3275
+Wire Wire Line
+	3700 2825 3700 2925
+Wire Wire Line
+	3700 2525 3700 2625
+$Comp
+L power:+5V #PWR?
+U 1 1 5BBC3A4E
+P 4125 4225
+F 0 "#PWR?" H 4125 4075 50  0001 C CNN
+F 1 "+5V" H 4125 4350 50  0000 C CNN
+F 2 "" H 4125 4225 50  0001 C CNN
+F 3 "" H 4125 4225 50  0001 C CNN
+	1    4125 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 4225 4125 4525
+Wire Wire Line
+	4025 3925 4025 4025
+Wire Wire Line
+	7025 3025 7300 3025
+Wire Wire Line
+	5150 4525 5425 4525
+$Comp
+L SSL_BLDC-rescue:A3930_1-GD U?
+U 1 1 5BBC3A59
+P 5925 3475
+F 0 "U?" H 5950 4872 60  0000 C CNN
+F 1 "A3930_1" H 5950 4766 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 5925 3475 60  0001 C CNN
+F 3 "" H 5925 3475 60  0001 C CNN
+	1    5925 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A60
+P 6750 2875
+F 0 "C?" H 6825 2925 50  0000 L CNN
+F 1 "0.47u" H 6775 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6750 2875 50  0001 C CNN
+F 3 "~" H 6750 2875 50  0001 C CNN
+	1    6750 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A67
+P 6875 3125
+F 0 "C?" V 6825 3050 50  0000 C CNN
+F 1 "10u" V 6825 3225 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6875 3125 50  0001 C CNN
+F 3 "~" H 6875 3125 50  0001 C CNN
+	1    6875 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A6E
+P 7300 3175
+F 0 "C?" H 7350 3250 50  0000 C CNN
+F 1 "0.1u" H 7400 3100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7300 3175 50  0001 C CNN
+F 3 "~" H 7300 3175 50  0001 C CNN
+	1    7300 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BBC3A75
+P 5150 2325
+F 0 "R?" H 5209 2371 50  0000 L CNN
+F 1 "27k" H 5209 2280 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5150 2325 50  0001 C CNN
+F 3 "~" H 5150 2325 50  0001 C CNN
+	1    5150 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5BBC3A7D
+P 3500 2525
+F 0 "Q?" H 3690 2571 50  0000 L CNN
+F 1 "BCP54" H 3690 2480 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD2:SOT-223" H 3700 2625 50  0001 C CNN
+F 3 "~" H 3500 2525 50  0001 C CNN
+	1    3500 2525
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3700 2525
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A85
+P 3700 2725
+F 0 "C?" H 3775 2775 50  0000 L CNN
+F 1 "0.1u" H 3725 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3700 2725 50  0001 C CNN
+F 3 "~" H 3700 2725 50  0001 C CNN
+	1    3700 2725
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 2725
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A8D
+P 7025 3925
+F 0 "C?" H 7075 4000 50  0000 C CNN
+F 1 "0.22u" H 7125 3850 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7025 3925 50  0001 C CNN
+F 3 "~" H 7025 3925 50  0001 C CNN
+	1    7025 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A94
+P 7025 4225
+F 0 "C?" H 7075 4300 50  0000 C CNN
+F 1 "0.22u" H 7125 4150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7025 4225 50  0001 C CNN
+F 3 "~" H 7025 4225 50  0001 C CNN
+	1    7025 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3A9B
+P 7025 4525
+F 0 "C?" H 7075 4600 50  0000 C CNN
+F 1 "0.22u" H 7125 4450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7025 4525 50  0001 C CNN
+F 3 "~" H 7025 4525 50  0001 C CNN
+	1    7025 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3AA2
+P 4250 3700
+F 0 "C?" V 4225 3475 50  0000 L CNN
+F 1 "0.68u" V 4150 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4250 3700 50  0001 C CNN
+F 3 "~" H 4250 3700 50  0001 C CNN
+	1    4250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BBC3AA9
+P 4250 3825
+F 0 "R?" V 4200 3650 50  0000 C CNN
+F 1 "56k" V 4325 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4250 3825 50  0001 C CNN
+F 3 "~" H 4250 3825 50  0001 C CNN
+	1    4250 3825
+	0    1    1    0   
+$EndComp
+Connection ~ 4350 3825
+Connection ~ 4150 3825
+$Comp
+L Device:R_Small R?
+U 1 1 5BBC3AB2
+P 4250 4025
+F 0 "R?" V 4200 3850 50  0000 C CNN
+F 1 "RDEAD" V 4200 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4250 4025 50  0001 C CNN
+F 3 "~" H 4250 4025 50  0001 C CNN
+	1    4250 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BBC3AB9
+P 4225 4225
+F 0 "R?" V 4150 4300 50  0000 C CNN
+F 1 "10k" V 4225 4225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4225 4225 50  0001 C CNN
+F 3 "~" H 4225 4225 50  0001 C CNN
+	1    4225 4225
+	0    1    1    0   
+$EndComp
+Connection ~ 4125 4225
+$Comp
+L Device:R_Small R?
+U 1 1 5BBC3AC1
+P 4225 4525
+F 0 "R?" V 4150 4600 50  0000 C CNN
+F 1 "10k" V 4225 4525 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4225 4525 50  0001 C CNN
+F 3 "~" H 4225 4525 50  0001 C CNN
+	1    4225 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BBC3ACF
+P 2950 2725
+F 0 "#PWR?" H 2950 2575 50  0001 C CNN
+F 1 "+5V" H 2850 2750 50  0000 C CNN
+F 2 "" H 2950 2725 50  0001 C CNN
+F 3 "" H 2950 2725 50  0001 C CNN
+	1    2950 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BBC3AD5
+P 3400 2825
+F 0 "C?" H 3475 2875 50  0000 L CNN
+F 1 "0.1u" H 3425 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3400 2825 50  0001 C CNN
+F 3 "~" H 3400 2825 50  0001 C CNN
+	1    3400 2825
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 2925
+$Comp
+L power:GNDA #PWR?
+U 1 1 5BBC3ADD
+P 3400 2925
+F 0 "#PWR?" H 3400 2675 50  0001 C CNN
+F 1 "GNDA" H 3405 2752 50  0000 C CNN
+F 2 "" H 3400 2925 50  0001 C CNN
+F 3 "" H 3400 2925 50  0001 C CNN
+	1    3400 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5BBC3AE3
+P 3875 4025
+F 0 "#PWR?" H 3875 3775 50  0001 C CNN
+F 1 "GNDA" H 3725 3950 50  0000 C CNN
+F 2 "" H 3875 4025 50  0001 C CNN
+F 3 "" H 3875 4025 50  0001 C CNN
+	1    3875 4025
+	1    0    0    -1  
+$EndComp
+Connection ~ 4025 4025
+Wire Wire Line
+	4025 4025 3875 4025
+Text Label 3950 4625 0    60   ~ 0
+VDRAIN
+Wire Wire Line
+	4025 4025 4150 4025
+Wire Wire Line
+	2950 2725 3400 2725
+Wire Wire Line
+	3550 2625 3550 2725
+Wire Wire Line
+	3550 2725 3400 2725
+$Comp
+L power:GNDA #PWR?
+U 1 1 5BBC3AF0
+P 5075 5175
+F 0 "#PWR?" H 5075 4925 50  0001 C CNN
+F 1 "GNDA" H 5080 5002 50  0000 C CNN
+F 2 "" H 5075 5175 50  0001 C CNN
+F 3 "" H 5075 5175 50  0001 C CNN
+	1    5075 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 5175 5075 5175
+Wire Wire Line
+	5025 4225 5425 4225
+Wire Wire Line
+	3550 2625 3700 2625
+Connection ~ 5075 5175
+Wire Wire Line
+	5075 5175 5150 5175
+Text Label 5150 2725 0    60   ~ 0
+FF2
+Text Label 6750 3225 2    60   ~ 0
+ESF
+Text HLabel 6750 3325 2    39   Output ~ 0
+LSS
+Text HLabel 6750 3525 2    39   Output ~ 0
+GLA
+Text HLabel 6750 3625 2    39   Output ~ 0
+GLB
+Text HLabel 6750 3725 2    39   Output ~ 0
+GLC
+Text HLabel 6750 3925 2    39   Output ~ 0
+GHA
+Text HLabel 6750 4025 2    39   Output ~ 0
+PHASE_A
+Text HLabel 6750 4225 2    39   Output ~ 0
+GHB
+Text HLabel 6750 4325 2    39   Output ~ 0
+PAHSE_B
+Text HLabel 6750 4525 2    39   Output ~ 0
+GHC
+Text HLabel 6750 4625 2    39   Output ~ 0
+PHASE_C
+Text HLabel 3950 4625 0    39   Input ~ 0
+VDRAIN
+Connection ~ 3700 2625
+Wire Wire Line
+	3400 2225 5150 2225
+Connection ~ 5150 2225
+Wire Wire Line
+	3700 2525 5425 2525
+Text GLabel 5150 2725 0    39   Output ~ 0
+FF2
+Text GLabel 5150 2825 0    39   Output ~ 0
+FF1
+Text GLabel 6750 3225 2    39   Output ~ 0
+ESF
+Text GLabel 5150 3625 0    39   Output ~ 0
+PWM
+Wire Wire Line
+	4350 3825 5425 3825
+Wire Wire Line
+	4025 3925 5425 3925
+Wire Wire Line
+	4350 4025 5425 4025
+Connection ~ 5025 4225
+Wire Wire Line
+	4325 4225 5025 4225
+Wire Wire Line
+	4325 4525 5150 4525
+Connection ~ 5150 4525
+Wire Wire Line
+	3950 4625 5425 4625
+$Comp
+L Device:R_Small R?
+U 1 1 5BC328E0
+P 5025 4975
+F 0 "R?" V 4950 5050 50  0000 C CNN
+F 1 "10k" V 5025 4975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5025 4975 50  0001 C CNN
+F 3 "~" H 5025 4975 50  0001 C CNN
+	1    5025 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BC32975
+P 5150 4975
+F 0 "R?" V 5075 5050 50  0000 C CNN
+F 1 "10k" V 5150 4975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5150 4975 50  0001 C CNN
+F 3 "~" H 5150 4975 50  0001 C CNN
+	1    5150 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4525 5150 4875
+Wire Wire Line
+	5025 4225 5025 4875
+Wire Wire Line
+	5025 5075 5025 5175
+Wire Wire Line
+	5150 5075 5150 5175
+Text GLabel 5150 3125 0    39   Output ~ 0
+DIR
+Wire Wire Line
+	3700 2625 4475 2625
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BC3FE21
+P 4475 2800
+F 0 "R?" H 4534 2846 50  0000 L CNN
+F 1 "100k" V 4475 2700 50  0000 L CNN
+F 2 "" H 4475 2800 50  0000 C CNN
+F 3 "" H 4475 2800 50  0000 C CNN
+	1    4475 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BC3FE83
+P 4575 2800
+F 0 "R?" H 4634 2846 50  0000 L CNN
+F 1 "100k" V 4575 2700 50  0000 L CNN
+F 2 "" H 4575 2800 50  0000 C CNN
+F 3 "" H 4575 2800 50  0000 C CNN
+	1    4575 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 2900 4475 3725
+Wire Wire Line
+	4475 3725 5425 3725
+Wire Wire Line
+	4475 2700 4475 2625
+Connection ~ 4475 2625
+Wire Wire Line
+	4475 2625 4575 2625
+Wire Wire Line
+	4575 2700 4575 2625
+Connection ~ 4575 2625
+Wire Wire Line
+	4575 2625 5425 2625
+Text GLabel 5150 3225 0    39   Output ~ 0
+H1
+Text GLabel 5150 3325 0    39   Output ~ 0
+H2
+Text GLabel 5150 3425 0    39   Output ~ 0
+H3
+Wire Wire Line
+	4575 3025 5425 3025
+Wire Wire Line
+	4575 2900 4575 3025
+Text GLabel 5150 2925 0    39   Output ~ 0
+TACHO
+Wire Wire Line
+	5150 2925 5425 2925
+Text GLabel 5150 4125 0    39   Output ~ 0
+TACHO
+$Comp
+L CircuitLecture2016_STM32F103-cache:R_Small R?
+U 1 1 5BC5B71B
+P 6750 2325
+F 0 "R?" H 6809 2371 50  0000 L CNN
+F 1 "100k" V 6750 2225 50  0000 L CNN
+F 2 "" H 6750 2325 50  0000 C CNN
+F 3 "" H 6750 2325 50  0000 C CNN
+	1    6750 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BC5B790
+P 6750 2150
+F 0 "#PWR?" H 6750 2000 50  0001 C CNN
+F 1 "+5V" H 6650 2175 50  0000 C CNN
+F 2 "" H 6750 2150 50  0001 C CNN
+F 3 "" H 6750 2150 50  0001 C CNN
+	1    6750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2150 6750 2225
+Wire Wire Line
+	6750 2425 6750 2525
+$EndSCHEMATC
